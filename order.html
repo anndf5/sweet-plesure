@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Pleasure - Order</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./images/cake.png" type="image/png">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-left">
+                <a href="index.html">Home</a>
+                <span class="divider"></span>
+                <a href="about.html">About Us</a>
+                <span class="divider"></span>
+                <a href="product.html">Products</a>
+            </div>
+            <div class="right-nav">
+                <a href="order.html">Order</a>
+                <span class="divider"></span>
+                <a href="login.html">Log In</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>Place Your Order</h1>
+        <div class="order-container">
+            <div class="info-text">
+                <h2>Important Information Before You Order</h2>
+                <p>Please describe what you want in the cake: what it should be made from, any allergies, and the design of the cake. Note that this is a pickup-only service. For more information, visit our <a href="about.html">About Us</a> page. Payment is required upfront.</p>
+            </div>
+            <form class="contact-form">
+                <div class="name-fields">
+                    <input type="text" name="first_name" placeholder="First Name" required>
+                    <input type="text" name="last_name" placeholder="Last Name" required>
+                </div>
+                <input type="email" name="email" placeholder="Email" required>
+                <div class="phone-field">
+                    <div class="country-code">
+                        <select name="country_code" required>
+                            <option value="">Select Country</option>
+                            <option value="+46">Sweden (+46)</option>
+                            <option value="+1">MKD (+389)</option>
+                            <option value="+44">UK (+44)</option>
+                            <option value="+49">Germany (+49)</option>
+                            <option value="+33">France (+33)</option>
+                            <option value="+39">Italy (+39)</option>
+                            <option value="+34">Spain (+34)</option>
+                            <option value="+41">Switzerland (+41)</option>
+                        </select>
+                    </div>
+                    <input type="tel" name="phone" placeholder="Phone Number" required>
+                </div>
+                <textarea name="message" placeholder="Order Details" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="qr-code">
+            <h3>Payment Method</h3>
+            <p>Use the QR code for payment:</p>
+            <img src="./images/swish.png" alt="Swish QR Code">
+        </div>
+    </main>
+</body>
+</html>
